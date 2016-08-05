@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking.h"
+#import "BBGManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [[[BBGManager alloc]init] getAdvListByType:@1 zone_id:@1];
+    
 }
 
 - (void)didReceiveMemoryWarning {
